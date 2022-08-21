@@ -52,6 +52,17 @@ public class LoginPage extends BaseClassPage {
 	// TextLink 'Forgot Password'
 	@FindBy(xpath = "//*[@id=\"forgot_password_link\"]")
 	public WebElement forgot_password;
+// Forgot your password 'User Name' textbox
+	@FindBy(id = "un")
+	public WebElement forgotUsername;
+
+	// Continue button in Forgot password page
+	@FindBy(id = "continue")
+	public WebElement continueButton;
+
+	// Forgot password email sent form
+	@FindBy(id = "forgotPassForm")
+	public WebElement passwordResetScreen;
 
 	public void enterUsername(String strUsername) {
 		user_name.sendKeys(strUsername);
@@ -129,16 +140,38 @@ public class LoginPage extends BaseClassPage {
 
 		return objdriver.getTitle();
 	}
+
 	public boolean isSavedUsernameSeen() {
-		
-		boolean blnresult=ActionsUtility.verifyIfDisplayed(username_idcard);
-		
+
+		boolean blnresult = ActionsUtility.verifyIfDisplayed(username_idcard);
+
 		return blnresult;
-		
+
 	}
 
 	public String getSavedUsername() {
 		return username_idcard.getText();
+	}
+
+	public void clickForgotPassword() {
+		ActionsUtility.clickAction(forgot_password);
+	}
+
+	public boolean isForgotPassowrdDisplayed() {
+
+		boolean blnresult = ActionsUtility.verifyIfDisplayed(forgotUsername);
+		return blnresult;
+
+	}
+
+	public void enterForgotUsername(String text) {
+		ActionsUtility.sendKeysEvent(forgotUsername, text);
+	}
+
+	public boolean isResetPasswordScreen() {
+
+		boolean blnIsResetDisplay = ActionsUtility.verifyIfDisplayed(passwordResetScreen);
+		return blnIsResetDisplay;
 	}
 
 }

@@ -6,8 +6,8 @@
       <class name="sfdc.org.test.LoginTest">
         <methods>
           <include name="getResult"/>
-          <include name="LoginToSalesForce_TC02" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="ForgotPassword4B" invocation-numbers="0"/>
           <include name="closeDriver"/>
           <include name="createExtentReport"/>
           <include name="reportTearDown"/>

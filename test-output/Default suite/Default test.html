@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 20 23:20:58 EDT 2022</td>
+<td>Started on:</td><td>Sun Aug 21 16:19:04 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30629 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11027 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sfdc.org.test.LoginTest.LoginToSalesForce_TC02()'><b>LoginToSalesForce_TC02</b><br>Test class: sfdc.org.test.LoginTest<br>Parameters: harrypotter@abc.com, Open123$#SalesF</td>
-<td><div><pre>java.lang.AssertionError: Free trial option should be available expected [true] but found [false]
+<td title='sfdc.org.test.LoginTest.ForgotPassword4B()'><b>ForgotPassword4B</b><br>Test class: sfdc.org.test.LoginTest<br>Parameters: 123, 22131</td>
+<td><div><pre>java.lang.AssertionError: Expected error message and displayed error message should be same expected [Your login attempt has failed. The username or password may be incorrect, or your location or login time may be restricted. Please contact the administrator at your company for help] but found [Please check your username and password. If you still can&apos;t log in, contact your Salesforce administrator.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at sfdc.org.test.LoginTest.LoginToSalesForce_TC02(LoginTest.java:73)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at sfdc.org.test.LoginTest.ForgotPassword4B(LoginTest.java:145)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,12 +112,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1643345873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1643345873'><pre>java.lang.AssertionError: Free trial option should be available expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace473183836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace473183836'><pre>java.lang.AssertionError: Expected error message and displayed error message should be same expected [Your login attempt has failed. The username or password may be incorrect, or your location or login time may be restricted. Please contact the administrator at your company for help] but found [Please check your username and password. If you still can&apos;t log in, contact your Salesforce administrator.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at sfdc.org.test.LoginTest.LoginToSalesForce_TC02(LoginTest.java:73)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at sfdc.org.test.LoginTest.ForgotPassword4B(LoginTest.java:145)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,27 +149,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>sfdc.org.test.LoginTest@65f8f5ae</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='sfdc.org.test.LoginTest.LoginErrorMessage_TC01()'><b>LoginErrorMessage_TC01</b><br>Test class: sfdc.org.test.LoginTest<br>Parameters: harrypotter@abc.com, </td>
-<td></td>
 <td>2</td>
-<td>sfdc.org.test.LoginTest@65f8f5ae</td></tr>
-<tr>
-<td title='sfdc.org.test.LoginTest.checkRememberMe_TC03()'><b>checkRememberMe_TC03</b><br>Test class: sfdc.org.test.LoginTest<br>Parameters: harrypotter@abc.com, Open123$#SalesF</td>
-<td></td>
-<td>6</td>
-<td>sfdc.org.test.LoginTest@65f8f5ae</td></tr>
+<td>sfdc.org.test.LoginTest@72cc7e6f</td></tr>
 </table><p>
 </body>
 </html>

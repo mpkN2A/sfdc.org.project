@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 20, 2022 11:06:01 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 21, 2022 04:19:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,7 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -124,10 +124,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -139,10 +139,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='10%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='90%'>18</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='83.333%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -159,15 +159,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Test Case 01 - Login Error Message</span>
-						<span class='test-time'>Aug 20, 2022 11:06:09 PM</span>
+						<span class='test-name'>TC 05 Forgot Password 4B</span>
+						<span class='test-time'>Aug 21, 2022 04:19:11 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:09 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+27ms</span>
+	<span class='label start-time'>Aug 21, 2022 04:19:11 PM</span>
+	<span class='label end-time'>Aug 21, 2022 04:19:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+705ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -181,98 +181,28 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:09 PM</td>
-					<td class='step-details'>TC 01 Login Error Message START</td>
+					<td class='timestamp'>4:19:11 PM</td>
+					<td class='step-details'>TC 05 START</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:09 PM</td>
-					<td class='step-details'>Salesforce application page is displayed.</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:09 PM</td>
-					<td class='step-details'>User Name is displayed in username field</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:10 PM</td>
-					<td class='step-details'>Password field is Empty</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:12 PM</td>
-					<td class='step-details'>Error Message is displayed</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:06:12 PM</td>
-					<td class='step-details'>TC 01 Login Error Message PASSED</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>Failed Test Case Log</span>
-						<span class='test-time'>Aug 20, 2022 11:06:12 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:12 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Test Case 02 - Login in To SalesForce</span>
-						<span class='test-time'>Aug 20, 2022 11:06:17 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:17 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+735ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:17 PM</td>
-					<td class='step-details'>TC 02 Login To SalesForce START</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:17 PM</td>
+					<td class='timestamp'>4:19:11 PM</td>
 					<td class='step-details'>SFDC login page is opened</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:19 PM</td>
-					<td class='step-details'>Valid credentials are entered.</td>
+					<td class='timestamp'>4:19:11 PM</td>
+					<td class='step-details'>User name:123 is entered</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:19 PM</td>
-					<td class='step-details'>Verifying if Free Trial message is displayed</td>
+					<td class='timestamp'>4:19:12 PM</td>
+					<td class='step-details'>Password:22131 is entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>4:19:13 PM</td>
+					<td class='step-details'>Login button is Clicked</td>
 				</tr>
 			</tbody>
 		</table>
@@ -281,17 +211,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  error' status='error' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Failed Test Case Log</span>
-						<span class='test-time'>Aug 20, 2022 11:06:19 PM</span>
-						<span class='test-status right error'>error</span>
+						<span class='test-time'>Aug 21, 2022 04:19:13 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:19 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+	<span class='label start-time'>Aug 21, 2022 04:19:13 PM</span>
+	<span class='label end-time'>Aug 21, 2022 04:19:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+5ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -303,14 +233,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='error'>
-					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
-					<td class='timestamp'>11:06:19 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: Free trial option should be available expected [true] but found [false]
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:13 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: Expected error message and displayed error message should be same expected [Your login attempt has failed. The username or password may be incorrect, or your location or login time may be restricted. Please contact the administrator at your company for help] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at sfdc.org.test.LoginTest.LoginToSalesForce_TC02(LoginTest.java:73)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at sfdc.org.test.LoginTest.ForgotPassword4B(LoginTest.java:145)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -344,96 +276,6 @@
 			</tbody>
 		</table>
 	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>Test Case 03 - Check Remember Me</span>
-						<span class='test-time'>Aug 20, 2022 11:06:25 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:25 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+759ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:25 PM</td>
-					<td class='step-details'>TC 03 START</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:25 PM</td>
-					<td class='step-details'>SFDC login page is opened</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:33 PM</td>
-					<td class='step-details'>Sales force home page is displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:33 PM</td>
-					<td class='step-details'>Verify if User menu is displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:33 PM</td>
-					<td class='step-details'>User menu is displayed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:33 PM</td>
-					<td class='step-details'>Logout is Clicked</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:35 PM</td>
-					<td class='step-details'>Login sales force page is displayed withharrypotter@abc.compopulated and remember user name checked)</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>11:06:35 PM</td>
-					<td class='step-details'>User Name harrypotter@abc.com is displayed</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:06:35 PM</td>
-					<td class='step-details'>TC 03 PASSED</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>Failed Test Case Log</span>
-						<span class='test-time'>Aug 20, 2022 11:06:35 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 20, 2022 11:06:35 PM</span>
-	<span class='label end-time'>Aug 20, 2022 11:06:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
 					</div>
 				</li>
 			</ul>
@@ -504,13 +346,15 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 20, 2022 11:06:19 PM</td>
-                                                        <td class='linked' test-id='4'>Failed Test Case Log</td>
-                                                        <td><pre><pre>java.lang.AssertionError: Free trial option should be available expected [true] but found [false]
+                                                        <td>Aug 21, 2022 04:19:13 PM</td>
+                                                        <td class='linked' test-id='2'>Failed Test Case Log</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Expected error message and displayed error message should be same expected [Your login attempt has failed. The username or password may be incorrect, or your location or login time may be restricted. Please contact the administrator at your company for help] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at sfdc.org.test.LoginTest.LoginToSalesForce_TC02(LoginTest.java:73)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at sfdc.org.test.LoginTest.ForgotPassword4B(LoginTest.java:145)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -565,31 +409,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 20, 2022 11:06:01 PM</div>
+					<div class='panel-lead'>Aug 21, 2022 04:19:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 20, 2022 11:06:36 PM</div>
+			 		<div class='panel-lead'>Aug 21, 2022 04:19:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 34s+773ms</div>
+					<div class='panel-lead'>0h 0m 10s+503ms</div>
 				</div>
 			</div>
 		</div>
@@ -602,21 +446,21 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 0,
+				passParent: 1,
+				failParent: 1,
 				fatalParent: 0,
-				errorParent: 1,
+				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 2,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
-				errorChild: 1,
+				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 17,
+				infoChild: 5,
 				exceptionsChild: 1,
 				
 				passGrandChild: 0,

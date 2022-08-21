@@ -40,12 +40,12 @@ public class ActionsUtility extends BaseClassPage {
 			if(blnCheck)
 			{
 				if(!element.isSelected())
-					element.click();
+				ActionsUtility.clickAction(element);
 			}
 			else
 			{
 				if(element.isSelected())
-					element.click();
+					ActionsUtility.clickAction(element);
 				
 			}
 			

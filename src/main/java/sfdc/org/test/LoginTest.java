@@ -23,9 +23,12 @@ import sfdc.org.PageObjects.UserMenuPage;
 import sfdc.org.utilities.FileUtility;
 
 public class LoginTest extends BaseClassPage {
- //test 12.45am
+	// test 12.45am
 	public String LoginPageTitle = "Login | Salesforce";
 	public String SFDeveloperPageTitle = "Home Page ~ Salesforce - Developer Edition";
+	public String strExpectedEmailpage = "Check Your Email | Salesforce";
+	public String strFreeTrialText ="Welcome to your free trial";
+	public String strErrormsg4B = "Your login attempt has failed. The username or password may be incorrect, or your location or login time may be restricted. Please contact the administrator at your company for help";
 	public static ExtentReports extent;
 	public static ExtentTest test;
 
@@ -39,7 +42,7 @@ public class LoginTest extends BaseClassPage {
 		extent.attachReporter(htmlreport);
 	}
 
-	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
+	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
 	public void LoginErrorMessage_TC01(String strUsername, String strPassword) throws IOException {
 		ExtentTest test = extent.createTest("Test Case 01 - Login Error Message ");
 		test.log(Status.INFO, "TC 01 Login Error Message START");
@@ -58,7 +61,7 @@ public class LoginTest extends BaseClassPage {
 
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
 	public void LoginToSalesForce_TC02(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("Test Case 02 - Login in To SalesForce ");
 		test.log(Status.INFO, "TC 02 Login To SalesForce START");
@@ -74,7 +77,7 @@ public class LoginTest extends BaseClassPage {
 		test.log(Status.PASS, "TC 02 Login To SalesForce PASSED");
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
 	public void checkRememberMe_TC03(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("Test Case 03 - Check Remember Me");
 		test.log(Status.INFO, "TC 03 START");
@@ -103,9 +106,8 @@ public class LoginTest extends BaseClassPage {
 		test.log(Status.PASS, "TC 03 PASSED");
 
 	}
-	
 
-	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
 	public void ForgotPassword4A(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("TC 04 Forgot Password 4A");
 		test.log(Status.INFO, "TC 04 START");
@@ -113,9 +115,41 @@ public class LoginTest extends BaseClassPage {
 		String loginPageTitle = loginpage.getLoginTitle();
 		Assert.assertTrue(loginPageTitle.equals(LoginPageTitle));
 		test.log(Status.INFO, "SFDC login page is opened");
-		
-	
+		loginpage.clickForgotPassword();
+		test.log(Status.INFO, "Forgot password link is clicked");
+		Assert.assertTrue(loginpage.isForgotPassowrdDisplayed(), "Forgot password screen should be displayed");
+		test.log(Status.INFO, "Salesforce forgot password page is displayed");
+		loginpage.enterForgotUsername(strUsername);
+		test.log(Status.INFO, "Username:" + strUsername + " is enetered in salesforce Forgot password");
+		loginpage.continueButton.click();
+		Assert.assertTrue(loginpage.passwordResetScreen.isDisplayed(), "password reset message should be seen");
+		test.log(Status.INFO, "An email associated with " + strUsername + " account is sent");
+		test.log(Status.PASS, "TC 04 PASSED");
+
 	}
+
+	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
+	public void ForgotPassword4B(String strUsername, String strPassword) {
+		ExtentTest test = extent.createTest("TC 05 Forgot Password 4B");
+		test.log(Status.INFO, "TC 05 START");
+		LoginPage loginpage = new LoginPage(objdriver);
+		String loginPageTitle = loginpage.getLoginTitle();
+		Assert.assertTrue(loginPageTitle.equals(LoginPageTitle));
+		test.log(Status.INFO, "SFDC login page is opened");
+		loginpage.enterUsername(strUsername);
+		test.log(Status.INFO,"User name:"+ strUsername+" is entered");
+		loginpage.enterPassword(strPassword);
+		test.log(Status.INFO,"Password:"+ strPassword+" is entered");
+		loginpage.clickLogin();
+		test.log(Status.INFO,"Login button is Clicked");
+		Assert.assertEquals(loginpage.getErrorMessage(), strErrormsg4B,
+				"Expected error message and displayed error message should be same");
+		test.log(Status.PASS, "TC 05 START");
+		
+		
+
+	}
+
 	@AfterMethod
 	public void getResult(ITestResult result) {
 		ExtentTest test = extent.createTest("Failed Test Case Log");
