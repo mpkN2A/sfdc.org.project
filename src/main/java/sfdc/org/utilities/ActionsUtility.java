@@ -13,7 +13,7 @@ public class ActionsUtility extends BaseClassPage {
 	// Click Action
 	public static void clickAction(WebElement element) {
 
-		WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(50));
+		WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 
@@ -62,6 +62,15 @@ public class ActionsUtility extends BaseClassPage {
 			}
 			return blnisDisplayed;
 			
+			
+		}
+		public static boolean verifyContainsText(WebElement element, String strText)
+		{
+			WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(50));
+			wait.until(ExpectedConditions.visibilityOf(element));
+			String strDisplayedText = getTextValue(element);
+			boolean blnVerifyContains =strDisplayedText.contains(strText);
+			return blnVerifyContains;
 			
 		}
 

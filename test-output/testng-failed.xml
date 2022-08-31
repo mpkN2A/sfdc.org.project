@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sfdc.org.test.LoginTest">
+      <class name="sfdc.org.test.UserMenuTest">
         <methods>
           <include name="getResult"/>
-          <include name="setup"/>
-          <include name="ForgotPassword4B" invocation-numbers="0"/>
-          <include name="closeDriver"/>
+          <include name="mySettingsTC07" invocation-numbers="0"/>
           <include name="createExtentReport"/>
+          <include name="setup"/>
+          <include name="closeDriver"/>
           <include name="reportTearDown"/>
         </methods>
-      </class> <!-- sfdc.org.test.LoginTest -->
+      </class> <!-- sfdc.org.test.UserMenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

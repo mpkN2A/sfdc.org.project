@@ -42,7 +42,7 @@ public class LoginTest extends BaseClassPage {
 		extent.attachReporter(htmlreport);
 	}
 
-	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "sfdcCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void LoginErrorMessage_TC01(String strUsername, String strPassword) throws IOException {
 		ExtentTest test = extent.createTest("Test Case 01 - Login Error Message ");
 		test.log(Status.INFO, "TC 01 Login Error Message START");
@@ -61,7 +61,7 @@ public class LoginTest extends BaseClassPage {
 
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void LoginToSalesForce_TC02(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("Test Case 02 - Login in To SalesForce ");
 		test.log(Status.INFO, "TC 02 Login To SalesForce START");
@@ -77,7 +77,7 @@ public class LoginTest extends BaseClassPage {
 		test.log(Status.PASS, "TC 02 Login To SalesForce PASSED");
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void checkRememberMe_TC03(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("Test Case 03 - Check Remember Me");
 		test.log(Status.INFO, "TC 03 START");
@@ -85,7 +85,7 @@ public class LoginTest extends BaseClassPage {
 		UserMenuPage usermenupage = new UserMenuPage(objdriver);
 		String loginPageTitle = loginpage.getLoginTitle();
 		Assert.assertTrue(loginPageTitle.equals(LoginPageTitle));
-		test.log(Status.INFO, "SFDC login page is opened");
+		test.log(Status.INFO, "SFDC login page is opened");	
 		loginpage.loginToApp(strUsername, strPassword, true);
 		HomePage objHomePage = new HomePage(objdriver);
 		Assert.assertTrue(objHomePage.getHomePageTitle().equals(SFDeveloperPageTitle));
@@ -107,7 +107,7 @@ public class LoginTest extends BaseClassPage {
 
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void ForgotPassword4A(String strUsername, String strPassword) {
 		ExtentTest test = extent.createTest("TC 04 Forgot Password 4A");
 		test.log(Status.INFO, "TC 04 START");

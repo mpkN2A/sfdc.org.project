@@ -37,19 +37,21 @@ public class BaseClassPage {
     		 WebDriverManager.chromedriver().setup();
     		 objdriver=new ChromeDriver();
     		 objdriver.get(prop.getProperty("testURL"));
+    		 objdriver.manage().window().maximize();
     	 }
     	 if (prop.getProperty("browser").equals("firefox"))
     	 {
     		 WebDriverManager.chromedriver().setup();
     		 objdriver=new  FirefoxDriver();
     		 objdriver.get(prop.getProperty("testURL"));
+    		 objdriver.manage().window().maximize();
     	 }
     	 
      }
      @AfterMethod
      public void closeDriver()
      {
-    	 objdriver.quit();
+    	// objdriver.quit();
      }
    
 }
