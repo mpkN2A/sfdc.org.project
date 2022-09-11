@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -19,6 +21,9 @@ public class BaseClassPage {
 	 public static WebDriver objdriver ;
      public static Properties prop=new Properties();
      public static FileReader fr;
+     public static String LoginPageTitle = "Login | Salesforce";
+ 	public static String SFDeveloperPageTitle = "Home Page ~ Salesforce - Developer Edition";
+ 	//@Parameters("browser")
      @BeforeMethod
      public void setup() throws IOException
      {

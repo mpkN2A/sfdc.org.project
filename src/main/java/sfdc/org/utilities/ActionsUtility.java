@@ -2,6 +2,7 @@ package sfdc.org.utilities;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,7 +14,7 @@ public class ActionsUtility extends BaseClassPage {
 	// Click Action
 	public static void clickAction(WebElement element) {
 
-		WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(60));
+		WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(80));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 
@@ -25,11 +26,25 @@ public class ActionsUtility extends BaseClassPage {
 		element.sendKeys(strValue);
 		
 	}
+	public  static void sendKeyboard(WebElement element,Keys strValue) {
+		WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(strValue);
+		
+	}
+	
+	
+	//clear text
+	public static void clearField(WebElement element) {
+		element.clear();
+
+	}
 	// Get Text
 		public static String getTextValue(WebElement element) {
 			String gettext =null;
 			WebDriverWait wait = new WebDriverWait(objdriver, Duration.ofSeconds(50));
 			wait.until(ExpectedConditions.visibilityOf(element));
+			
 			gettext=element.getText();
 			return gettext;
 			

@@ -14,6 +14,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.github.dockerjava.api.model.Driver;
 
 import sfdc.org.PageObjects.BaseClassPage;
 import sfdc.org.PageObjects.HomePage;
@@ -36,7 +37,7 @@ public class UserMenuTest extends BaseClassPage {
 		extent.attachReporter(htmlreport);
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void SelectUserMenuDropdownTC05(String strUsername, String strPassword) throws IOException {
 		ExtentTest test = extent.createTest("Test Case 05 - Select user menu for <username> drop down");
 		test.log(Status.INFO, "TC 05 START");
@@ -59,7 +60,7 @@ public class UserMenuTest extends BaseClassPage {
 		test.log(Status.PASS, "TC 05 PASSED");
 	}
 
-	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class, enabled = false)
+	@Test(dataProvider = "ValidCredentials", dataProviderClass = sfdc.org.utilities.ReadExcelData.class)
 	public void myProfileTC06(String strUsername, String strPassword) throws IOException {
 		ExtentTest test = extent.createTest("Test Case 06 - Select My Profile");
 		test.log(Status.INFO, "TC 06 START");
@@ -164,6 +165,7 @@ public class UserMenuTest extends BaseClassPage {
 	@AfterTest
 	public void reportTearDown() throws IOException {
 		extent.flush();
+		objdriver.quit();
 
 	}
 

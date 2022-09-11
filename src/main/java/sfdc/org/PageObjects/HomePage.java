@@ -19,7 +19,7 @@ public WebElement checkHomepageUserName;
 	
 	//  Home Page
 	public String getHomePageTitle() {
-		objdriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
+		//objdriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 		return  objdriver.getTitle();
 
 	}

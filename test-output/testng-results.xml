@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-30T19:56:46 EDT" name="Default suite" finished-at="2022-08-30T19:56:57 EDT" duration-ms="11078">
+  <suite started-at="2022-09-09T01:01:58 EDT" name="Default suite" finished-at="2022-09-09T01:03:33 EDT" duration-ms="95814">
     <groups>
     </groups>
-    <test started-at="2022-08-30T19:56:46 EDT" name="Default test" finished-at="2022-08-30T19:56:57 EDT" duration-ms="11078">
-      <class name="sfdc.org.test.UserMenuTest">
-        <test-method is-config="true" signature="createExtentReport()[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:46 EDT" name="createExtentReport" finished-at="2022-08-30T19:56:46 EDT" duration-ms="318" status="PASS">
+    <test started-at="2022-09-09T01:01:58 EDT" name="Default test" finished-at="2022-09-09T01:03:33 EDT" duration-ms="95814">
+      <class name="sfdc.org.test.ContactsTest">
+        <test-method is-config="true" signature="createExtentReport()[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:01:58 EDT" name="createExtentReport" finished-at="2022-09-09T01:01:58 EDT" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:48 EDT" name="setup" finished-at="2022-08-30T19:56:55 EDT" duration-ms="6809" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:01:59 EDT" name="setup" finished-at="2022-09-09T01:02:06 EDT" duration-ms="6799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="mySettingsTC07(java.lang.String,java.lang.String)[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:55 EDT" name="mySettingsTC07" data-provider="ValidCredentials" finished-at="2022-08-30T19:56:56 EDT" duration-ms="1538" status="FAIL">
+        <test-method signature="myContactsTC28(java.lang.String,java.lang.String)[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:02:06 EDT" name="myContactsTC28" data-provider="ValidCredentials" finished-at="2022-09-09T01:03:33 EDT" duration-ms="87202" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -28,47 +28,17 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such window: window was already closed
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Mohanas-MacBook-Air.local', ip: 'fe80:0:0:0:8e7:df47:c0a9:3cfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [986d4910b427ccc14f5275598ea50888, findElement {using=id, value=rememberUn}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/q5/3phgxl2n11z...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 986d4910b427ccc14f5275598ea50888]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='go']' (tried for 80 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Mohanas-MacBook-Air.local', ip: 'fe80:0:0:0:8e7:df47:c0a9:3cfc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [986d4910b427ccc14f5275598ea50888, findElement {using=id, value=rememberUn}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/q5/3phgxl2n11z...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 986d4910b427ccc14f5275598ea50888
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy19.isSelected(Unknown Source)
-at sfdc.org.utilities.ActionsUtility.checkUncheckBox(ActionsUtility.java:42)
-at sfdc.org.PageObjects.LoginPage.loginToApp(LoginPage.java:131)
-at sfdc.org.test.UserMenuTest.mySettingsTC07(UserMenuTest.java:100)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='go']' (tried for 80 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at sfdc.org.utilities.ActionsUtility.clickAction(ActionsUtility.java:18)
+at sfdc.org.PageObjects.ContactsPage.isMyContactPageDisplayed(ContactsPage.java:58)
+at sfdc.org.test.ContactsTest.myContactsTC28(ContactsTest.java:103)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,32 +67,66 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='go']"}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Mohanas-MacBook-Air.local', ip: 'fe80:0:0:0:1cb1:ba5e:7004:d83a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47b845160d30f45bcbf7a8993fd3c16c, findElement {using=xpath, value=//input[@name='go']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/q5/3phgxl2n11z...}, goog:chromeOptions: {debuggerAddress: localhost:63725}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63725/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47b845160d30f45bcbf7a8993fd3c16c
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mySettingsTC07 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:56 EDT" name="getResult" finished-at="2022-08-30T19:56:57 EDT" duration-ms="11" status="PASS">
+        </test-method> <!-- myContactsTC28 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:03:33 EDT" name="getResult" finished-at="2022-09-09T01:03:33 EDT" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=mySettingsTC07 status=FAILURE method=UserMenuTest.mySettingsTC07(java.lang.String,java.lang.String)[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda] output={null}]]]>
+                <![CDATA[[TestResult name=myContactsTC28 status=FAILURE method=ContactsTest.myContactsTC28(java.lang.String,java.lang.String)[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:57 EDT" name="closeDriver" finished-at="2022-08-30T19:56:57 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:03:33 EDT" name="closeDriver" finished-at="2022-09-09T01:03:33 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:sfdc.org.test.UserMenuTest@7f485fda]" started-at="2022-08-30T19:56:57 EDT" name="reportTearDown" finished-at="2022-08-30T19:56:57 EDT" duration-ms="496" status="PASS">
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:sfdc.org.test.ContactsTest@28261e8e]" started-at="2022-09-09T01:03:33 EDT" name="reportTearDown" finished-at="2022-09-09T01:03:33 EDT" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTearDown -->
-      </class> <!-- sfdc.org.test.UserMenuTest -->
+      </class> <!-- sfdc.org.test.ContactsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
